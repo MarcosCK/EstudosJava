@@ -9,6 +9,7 @@ public class Aluno extends Pessoa {
 		this.matriculado =false;
 		
 	}
+	
 
 	public boolean isMatriculado() {
 		return matriculado;

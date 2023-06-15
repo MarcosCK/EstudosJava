@@ -1,14 +1,14 @@
-package Colege;
+package PessoABS;
 
-public class Pessoa {
-
-	 private String nome;
-	 private int idade;
-	 private String sexo;
-	 
-	 public void fazerAniv() {
-		 this.idade++;
-	 }
+public abstract class Pessoa {
+ 
+	private String nome;
+	private int idade;
+	private String sexo;
+	
+	public void fazerAniv() {
+		
+	}
 
 	public String getNome() {
 		return nome;
@@ -33,6 +33,13 @@ public class Pessoa {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	 
-	 
+
+	@Override
+	public String toString() {
+		return "Dados[nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+	}
+	
+	
+	
+	
 }
